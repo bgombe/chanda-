@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8fafc;
+  color: #1e1b4b;
+}
+
+header {
+  background: linear-gradient(to right, #1e3a8a, #d97706);
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0.5em 0;
+}
+
+header img {
+  border-radius: 50%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.gradient-banner {
+  background: linear-gradient(to right,  #1e3a8a 0%, #00f2fe 100%);
+  color: white;
+  text-align: center;
+  padding: 2em 1em;
+}
+
+.gradient-banner h2 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+main {
+  padding: 2em 1em;
+  background-color: #f8fafc;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.slide img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0,0,0,0.5);
+  user-select: none;
+  margin-top: -25px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.download-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background:#d97706;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.download-btn:hover {
+  background: #4952d6;
+  color:aliceblue;
+}
+footer {
+  background: linear-gradient(to right, #1e3a8a, #d97706);
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+ section{
+   text-align: center;
+   background-color: white;
+   color: #1e3a8a;
+   padding: 2em;
+   margin: 2em auto;
+   max-width: 800px;
+   box-shadow: 0 4px 6px rgba(0, 0,0,0.1);
+   border-radius: 8px;
+ }
+ button{
+  display: block;
+  margin: 1em auto;
+  background-color: #d97706;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1e3a8a;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <h1 id="myh1">CampusConnect</h1>
+         <img src="images/logo.png" width="100" height="100" alt="logo">
+         
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+<h1> Register With Us</h1>
+        </header>
+        
+    </header>
+    <main>
+        <section>
+<form id="registerForm">
+                <div class="input">
+                    <input type="text" id="admission" name="admission" placeholder=" Admission Number" required>
+                    <label for="admission" id="admission">Admission</label>
+                </div>
+                <div class="input">
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+                    <label for="name" id="name">Name</label>
+                </div>
+                <div class="input">
+                    <input type="text" id="event" name="event" placeholder="Select Event" required>
+                    <label for="event" id="event">Event</label>
+                </div>
+                <div class="input">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                    <label for="email" id="email">Email</label>
+
+                </div>
+                <div class="button">
+                    <button id="mybtn" type="submit">Submit</button>
+                </div>
+            </form>
+            <div id="success-message" style="display: none; background: #d4edda; color: #155724; padding: 1rem; border: 1px solid #c3e6cb; border-radius: 4px; margin: 1rem 0; text-align: center; font-weight: bold;">You have registered successfully</div>
+        </section>
+    </main>
+     <footer>
+        <p></p>
+        <p>@copyrights 2026 CampusConnect</p>
+    </footer>
+    <script src="script/index.js"></script>
+</body>
+</html>
